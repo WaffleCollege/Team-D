@@ -1,0 +1,20 @@
+body {
+    background-color:#CCFFFF;
+    }
+    
+    header {
+      background-color:#78EEEE;
+    }
+    
+    footer {
+      background-color:#78EEEE;
+    }
+    
+    img {
+      height:200px;
+      width:auto;
+    }
+    
+    .image {
+        text-align:center;
+    }
