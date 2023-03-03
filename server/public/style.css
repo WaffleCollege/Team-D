@@ -1,20 +1,50 @@
 body {
-    background-color:#CCFFFF;
+    /* background-color:#CCFFFF; */
+    background-color:#d6ffff;
     }
+
+.main {
+  color:#191970;
+}
     
-    header {
-      background-color:#78EEEE;
-    }
-    
-    footer {
-      background-color:#78EEEE;
-    }
-    
-    img {
-      height:200px;
-      width:auto;
-    }
-    
-    .image {
-        text-align:center;
-    }
+header {
+  /* background-color:#78EEEE; */
+  background-color:	#7fbfff;
+  /* background-color:#191970; */
+  border-bottom: 10px solid #ffffe0;
+}
+
+header h1 {
+  /* font-family: "Comic Sans MS"; */
+  font-family: cursive;
+  color:#ff9328;
+  -webkit-text-stroke:0.1px red;
+}
+
+footer {
+  /* background-color:#78EEEE; */
+  background-color:	#7fbfff;
+  border-top: 10px solid #ffffe0;
+  /* background-color:#191970; */
+  display:flex;
+  justify-content: center;
+}
+
+img {
+  height:200px;
+  width:auto;
+}
+
+.image {
+    text-align:center;
+}
+
+footer img {
+  height:20px;
+  width:auto;
+}
+
+a {
+  color:red;
+  padding:20px;
+}
