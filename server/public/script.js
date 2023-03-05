@@ -16,4 +16,6 @@ if((target - achievement) >= 1000){
 //ペンギン画像追加
 const image_parent = document.getElementById("image") //image(ペンギン達の親ノード)
 image_parent.appendChild(penguin);
-image_parent.style.textAlign = "center";
+image_parent.style.textAlign = "center"; //ペンギンセンターへ
+image_parent.style.margin = "10px";
+

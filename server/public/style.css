@@ -1,3 +1,4 @@
+/*全体*/
 body {
     /* background-color:#CCFFFF; */
     background-color:#d6ffff;
@@ -35,9 +36,9 @@ img {
   width:auto;
 }
 
-/* .image {
+.image {
     text-align:center;
-} */
+}
 
 footer img {
   height:20px;
@@ -47,4 +48,39 @@ footer img {
 a {
   color:red;
   padding:20px;
+}
+
+/*------------------------------------------------*/
+/*index.html*/
+.amount { /*入力フォームの単位あるやつ setting.htmlも*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input {
+  width:200px;
+  height:20px;
+}
+
+.amount h4 {
+  margin-left:10px;
+}
+
+/*------------------------------------------------*/
+/*target.html*/
+.target-achivement { 
+  margin:30px;
+  border: 3px solid #4169e1;
+  border-radius: 10px;
+  /* border-radius:30px solid #0000cd; */
+}
+
+.target-achivement h1 {
+  font-size:40px;
+  margin:1px;
+}
+
+.target-achivement h2 {
+  font-size:30px;
 }
