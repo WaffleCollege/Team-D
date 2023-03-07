@@ -1,0 +1,40 @@
+<!-- <% a = "試し" %> -->
+<% 
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth() + 1;
+let day = date.getDate();
+%>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>食品管理アプリ</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <header>
+          <h1>Food Manager</h1>
+        </header>
+        <div class = "main">
+            <div class = "calender">
+            カレンダー
+            </div>
+            <div class = "list">
+                <p><%= year %>/<%= month %>/<%= day %></p>
+                <!-- <p><%= a %></p> -->
+                <li>かぼちゃ</li>
+            </div>
+        </div>
+        <footer>
+            <a class = "icon" href = "/index"><div class = "image"><img src = "imgs/input-icon.png"><div>入力</div></div></a>
+            <a class = "icon" href = "/list"><div class = "image"><img src = "imgs/list-icon.png"><div>リスト</div></div></a>
+            <a class = "icon" href = "/target"><div class = "image"><img src = "imgs/goal-icon.png"><div>目標・実績</div></div></a>
+            <a class = "icon" href = "/graph"><div class = "image"><img src = "imgs/graph-icon.png"><div>年間グラフ</div></div></a>
+            <a class = "icon" href = "/setting"><div class = "image"><img src = "imgs/setting-icon.png"><div>設定</div></div></a>
+        </footer>
+        <script src="script.js"></script>
+      </body>
+</html>

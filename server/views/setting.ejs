@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>食品管理アプリ</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <header>
+          <h1>Food Manager</h1>
+        </header>
+        <div class = "main">
+        <h1>
+          設定
+        </h1>
+        <h2>
+          目標設定
+        </h2>
+        <table>
+          <tr>
+            <th>食費/月</th>
+            <td class = "amount"><input><h4 class = "unit">円</h4></td>
+          </tr>
+        </table>
+        <h2>
+          通知設定
+        </h2>
+        <table>
+          <tr>
+            <th>通知</th>
+            <td><input type="checkbox" name="check" /></td>
+          </tr>
+          <tr>
+            <th>賞味・消費期限</th>
+            <td class = "amount"><input><h4>日前</h4></td>
+          </tr>
+        </table>
+        <h2>
+          その他
+        </h2>
+            <table>
+          <tr>
+            <th>背景カラー</th>
+            <td><input></td>
+          </tr>
+          <tr>
+            <th>金額単位</th>
+            <td><input></td>
+          </tr>
+        </table>
+        <button>
+          保存
+        </button>
+      </div>
+      <footer>
+        <a class = "icon" href = "/index"><div class = "image"><img src = "imgs/input-icon.png"><div>入力</div></div></a>
+        <a class = "icon" href = "/list"><div class = "image"><img src = "imgs/list-icon.png"><div>リスト</div></div></a>
+        <a class = "icon" href = "/target"><div class = "image"><img src = "imgs/goal-icon.png"><div>目標・実績</div></div></a>
+        <a class = "icon" href = "/graph"><div class = "image"><img src = "imgs/graph-icon.png"><div>年間グラフ</div></div></a>
+        <a class = "icon" href = "/setting"><div class = "image"><img src = "imgs/setting-icon.png"><div>設定</div></div></a>
+      </footer>
+      <script src="script.js"></script>
+      </body>
+</html>
