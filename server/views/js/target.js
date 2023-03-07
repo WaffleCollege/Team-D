@@ -6,6 +6,7 @@ let target = Number(document.getElementById("target-figure").textContent); //目
 let achievement = Number(document.getElementById("achievement-figure").textContent); //実績
 
 if((target - achievement) >= 1000){
+    console.log("aaa")
     penguin.src = "imgs/pen1.png"; //すごい！ってやつ
 } else if((target - achievement) <= -1000) {
     penguin.src = "imgs/pen2.png"; //普通のやつ
@@ -18,4 +19,3 @@ const image_parent = document.getElementById("image") //image(ペンギン達の
 image_parent.appendChild(penguin);
 image_parent.style.textAlign = "center"; //ペンギンセンターへ
 image_parent.style.margin = "10px";
-
