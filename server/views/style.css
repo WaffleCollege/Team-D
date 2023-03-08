@@ -29,6 +29,7 @@ footer {
   /* background-color:#191970; */
   display:flex;
   justify-content: center;
+  margin-top:20px;
 }
 
 img {
@@ -51,7 +52,7 @@ a {
 }
 
 /*------------------------------------------------*/
-/*index.html*/
+/*index.ejs*/
 .amount { /*入力フォームの単位あるやつ setting.htmlも*/
   display: flex;
   justify-content: center;
@@ -68,7 +69,23 @@ a {
 }
 
 /*------------------------------------------------*/
-/*target.html*/
+/*list.ejs*/
+.day {
+    text-align:center;
+    font-size:30px;
+}
+
+#list {
+    margin:auto;
+    padding:10px;
+    border:3px solid #4169e1;
+}
+
+#list td {
+    padding:10px;
+}
+/*------------------------------------------------*/
+/*target.ejs*/
 .target-achivement { 
   margin:30px;
   border: 3px solid #4169e1;
