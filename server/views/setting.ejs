@@ -12,48 +12,49 @@
           <h1>Food Manager</h1>
         </header>
         <div class = "main">
-        <h1>
-          設定
-        </h1>
-        <h2>
-          目標設定
-        </h2>
-        <table>
-          <tr>
-            <th>食費/月</th>
-            <td class = "amount"><input><h4 class = "unit">円</h4></td>
-          </tr>
-        </table>
-        <h2>
-          通知設定
-        </h2>
-        <table>
-          <tr>
-            <th>通知</th>
-            <td><input type="checkbox" name="check" /></td>
-          </tr>
-          <tr>
-            <th>賞味・消費期限</th>
-            <td class = "amount"><input><h4>日前</h4></td>
-          </tr>
-        </table>
-        <h2>
-          その他
-        </h2>
+            <h1>設定</h1>
+            <h2>目標設定</h2>
             <table>
-          <tr>
-            <th>背景カラー</th>
-            <td><input></td>
-          </tr>
-          <tr>
-            <th>金額単位</th>
-            <td><input></td>
-          </tr>
-        </table>
-        <button>
-          保存
-        </button>
-      </div>
+            <% 
+                let target = 20000; //目標値をデータベースから引っ張る
+                let notification = null; //通知設定をデータベースから引っ張る
+                // let notification = "checked";
+                let unit = "円" //データベースから引っ張る
+                let limit = 3; //通知何日前か　データベースから引っ張る
+            %>
+                <tr>
+                    <th>食費/月</th>
+                    <td class = "amount"><input type = "text" value = <%= target%>><h4 class = "unit"><%= unit%></h4></td>
+                </tr>
+            </table>
+
+            <h2>通知設定</h2>
+            <table>
+                <tr>
+                    <th>通知</th>
+                    <td><input type="checkbox" name="check" <%= notification%>></td>
+                </tr>
+            <tr>
+                <th>賞味・消費期限</th>
+                <td class = "amount"><input type = "text" value = <%= limit%>><h4>日前</h4></td>
+            </tr>
+            </table>
+
+            <h2>その他</h2>
+            <table>
+                <!-- ここの設定無くしてもいいかも...(デザイン考えるのめんどい笑) -->
+                <tr>
+                    <th>背景カラー</th>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <th>金額単位</th>
+                    <td><input type = "text" value = <%= unit%>></td>
+                </tr>
+            </table>
+            <!-- 保存ボタンを押したらデータを更新する -->
+            <button>保存</button>
+        </div>
       <footer>
         <a class = "icon" href = "/index"><div class = "image"><img src = "imgs/input-icon.png"><div>入力</div></div></a>
         <a class = "icon" href = "/list"><div class = "image"><img src = "imgs/list-icon.png"><div>リスト</div></div></a>
