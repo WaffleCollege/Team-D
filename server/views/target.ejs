@@ -15,8 +15,11 @@
       <div id = "target-main">
         <div class = "target-achivement">
           <h1>目標</h1>
-          <div class = "amount">   
-            <h2 id = "target-figure">20000</h2>
+          <div class = "amount">
+            <%
+                let target = 20000; //データベースから目標値を引っ張ってくる
+            %>   
+            <h2 id = "target-figure"><%= target%></h2>
             <h2 class = "unit">円</h2>
           </div>
         </div>
@@ -24,7 +27,10 @@
         <div class = "target-achivement">
           <h1>実績</h1>
           <div class = "amount">
-            <h2 id = "achievement-figure">18000</h2>
+            <%
+                let amount = 18000; //データベースから引っ張ってくる
+            %>
+            <h2 id = "achievement-figure"><%= amount%></h2>
             <h2 class = "unit">円</h2>
           </div>
         </div>
@@ -41,6 +47,6 @@
         <a class = "icon" href = "/graph"><div class = "image"><img src = "imgs/graph-icon.png"><div>年間グラフ</div></div></a>
         <a class = "icon" href = "/setting"><div class = "image"><img src = "imgs/setting-icon.png"><div>設定</div></div></a>
       </footer>
-      <script src="script.js"></script>
+      <script src="js/target.js"></script>
   </body>
 </html>
