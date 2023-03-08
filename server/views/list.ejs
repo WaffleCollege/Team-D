@@ -1,11 +1,3 @@
-<!-- <% a = "試し" %> -->
-<!-- 日付変数 -->
-<% 
-let date = new Date();
-let year = date.getFullYear();
-let month = date.getMonth() + 1;
-let day = date.getDate();
-%>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -23,11 +15,19 @@ let day = date.getDate();
             <div class = "calender">
             カレンダー
             </div>
-            <div class = "list">
-                <p><%= year %>/<%= month %>/<%= day %></p>
-                <!-- <p><%= a %></p> -->
-                <li>かぼちゃ</li>
-            </div>
+            
+            <!-- 日付変更 -->
+            <% 
+                let date = new Date();
+                let year = date.getFullYear();
+                let month = date.getMonth() + 1;
+                let day = date.getDate();
+            %>
+            <p class = "day"><%= year %>/<%= month %>/<%= day %></p>
+
+            <table id = "list">
+                <!-- ここにリストを追加 -->
+            </table>
         </div>
         <footer>
             <a class = "icon" href = "/index"><div class = "image"><img src = "imgs/input-icon.png"><div>入力</div></div></a>
@@ -36,6 +36,6 @@ let day = date.getDate();
             <a class = "icon" href = "/graph"><div class = "image"><img src = "imgs/graph-icon.png"><div>年間グラフ</div></div></a>
             <a class = "icon" href = "/setting"><div class = "image"><img src = "imgs/setting-icon.png"><div>設定</div></div></a>
         </footer>
-        <script src="script.js"></script>
+        <script src="js/list.js"></script>
       </body>
 </html>
