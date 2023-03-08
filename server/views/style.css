@@ -101,3 +101,8 @@ a {
 .target-achivement h2 {
   font-size:30px;
 }
+
+#image {
+  text-align:center;
+  margin:10px;
+}
