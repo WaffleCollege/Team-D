@@ -3,45 +3,44 @@
     <head>
         <meta charset="utf-8">
         <title>食品管理アプリ</title>
-        <link rel="stylesheet" href="style.css">
-        
+        <link rel="stylesheet" href="style.css">  
     </head>
 
     <body>
         <header>
-        <h1>Food Manager</h1>
+          <h1>Food Manager</h1>
         </header>
         <div class = "main">
-        <h3>
-          カメラをバーコードに合わせてください
-        </h3>
+          <h3>カメラをバーコードに合わせてください</h3>
         
     <!--     <button>
           バーコード認識
         </button> -->
-        <h3>
-          バーコード認識ができない場合は直接入力してください
-        </h3>
-        <table>
-          <tr class = "input">
-            <th>商品名</th>
-            <td><input></td>
-          </tr>
-          <tr class = "input">
-            <th>金額</th>
-            <td class = "amount"><input><h4 class = "unit">
-              円
-              </h4></td>
-          </tr>
-          <tr class = "input">
-            <th>賞味・消費期限</th>
-            <td><input></td>
-          </tr>
-        </table>
-        <button>
-          入力する
-        </button>
-      </div>
+          <h3>バーコード認識ができない場合は直接入力してください</h3>
+          <table>
+            <tr class = "input">
+              <th>商品名</th>
+              <td><input></td>
+            </tr>
+            <tr class = "input">
+              <th>金額</th>
+              <td class = "amount">
+                <input><h4 class = "unit">
+                  <%
+                    let unit = "円" //データベースから引っ張る
+                  %>
+                  <%=unit%>
+                </h4>
+              </td>
+            </tr>
+            <tr class = "input">
+              <th>賞味・消費期限</th>
+              <td><input></td>
+            </tr>
+          </table>
+          <button id = "input-button">入力する</button>
+        </div>
+
         <footer>
           <a class = "icon" href = "/index"><div class = "image"><img src = "imgs/input-icon.png"><div>入力</div></div></a>
           <a class = "icon" href = "/list"><div class = "image"><img src = "imgs/list-icon.png"><div>リスト</div></div></a>
@@ -49,6 +48,6 @@
           <a class = "icon" href = "/graph"><div class = "image"><img src = "imgs/graph-icon.png"><div>年間グラフ</div></div></a>
           <a class = "icon" href = "/setting"><div class = "image"><img src = "imgs/setting-icon.png"><div>設定</div></div></a>
         </footer>
-        <script src="script.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
