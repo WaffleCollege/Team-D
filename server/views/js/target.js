@@ -15,6 +15,7 @@ function() {
     }
     document.getElementById('date').textContent = year + "年" + month + "月";
     // 実績→(month)の月のデータを引っ張る
+    // document.getElementById('achievement-figure').textContent = データベースから
 })
 
 //来月ボタンを押した時
@@ -28,4 +29,5 @@ function() {
     }
     document.getElementById('date').textContent = year + "年" + month + "月";
     // 実績→(month)の月のデータを引っ張る
+    // document.getElementById('achievement-figure').textContent = データベースから
 })
