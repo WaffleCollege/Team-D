@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
     res.render('login');
 })
 
+//新規登録画面
+app.get("/register", (req, res) => {
+    res.render('register');
+})
+
 //入力画面
 app.get("/index", (req, res) => {
     res.render('index');
@@ -47,4 +52,6 @@ app.listen(port, () => {
     console.log("Start Server!");
 });
 
-//http://localhost:3000/index
+
+//http://localhost:3000/ ログイン画面
+//http://localhost:3000/index 入力画面
