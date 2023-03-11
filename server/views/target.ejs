@@ -22,6 +22,16 @@
     </header>
     <div class = "main">
       <div id = "target-main">
+        <% 
+          let date = new Date();
+          let year = date.getFullYear();
+          let month = date.getMonth() + 1;
+        %>
+        <div class = button_date>
+          <button id = "last">←</button>
+            <h1 id = "date"><%= year %>年<%= month %>月</h1>
+          <button id = "next">→</button>
+        </div>
         <div class = "target-achivement">
           <h1>目標</h1>
           <div class = "amount"> 

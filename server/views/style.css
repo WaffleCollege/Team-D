@@ -136,6 +136,13 @@ form button{
 }
 /*------------------------------------------------*/
 /*target.ejs*/
+/* 日付のとこ */
+.button_date {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .target-achivement { 
   margin:30px;
   border: 3px solid #4169e1;
@@ -155,4 +162,8 @@ form button{
 #image {
   text-align:center;
   margin:10px;
+}
+
+#date {
+  text-align:center;
 }
