@@ -13,6 +13,11 @@ app.use(express.static("views"));
 //     res.sendFile(__dirname + "/public/index.html");
 // });
 
+//ログイン画面
+app.get("/", (req, res) => {
+    res.render('login');
+})
+
 //入力画面
 app.get("/index", (req, res) => {
     res.render('index');
