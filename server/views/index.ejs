@@ -35,7 +35,14 @@
             </tr>
             <tr class = "input">
               <th>賞味・消費期限</th>
-              <td><input></td>
+                <!-- 日付変更  yyyy-mm-dd で取得-->
+                <% 
+                let date = new Date();
+                let year = date.getFullYear();
+                let month = ("00" + (date.getMonth() + 1)).slice(-2);
+                let day = ("00" + (date.getDate())).slice(-2);
+                %>
+              <td><input type = "date" name = "limit" value = "<%=year%>-<%=month%>-<%=day%>"></td>
             </tr>
           </table>
           <button id = "input-button">入力する</button>
