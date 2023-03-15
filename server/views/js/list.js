@@ -1,4 +1,11 @@
-/*-----list.html-----*/
+/*-----list.ejs-----*/
+// const date = new Date();
+// console.log(date1.toLocaleString()); //2017/1/2 0:00:00
+
+// // 2. 日の計算
+// date1.setDate(date1.getDate() - 15);
+// console.log(date1.getDate()); 
+
 const food_obj_list = [];
 //データベースからlistに追加??
 food_obj_list.push({name: "かぼちゃ", amount: 200, limit:"2023/2/3"});
