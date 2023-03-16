@@ -12,21 +12,32 @@
           <h1>Food Manager</h1>
         </header>
         <div class = "main">
-          <h3>カメラをバーコードに合わせてください</h3>
+          <!-- <h3>カメラをバーコードに合わせてください</h3> -->
         
     <!--     <button>
           バーコード認識
         </button> -->
-          <h3>バーコード認識ができない場合は直接入力してください</h3>
-          <table>
+          <h3>入力してください</h3>
+          <table class = "input_table">
+            <!-- 日付変更  yyyy-mm-dd で取得-->
+            <% 
+            let date = new Date();
+            let year = date.getFullYear();
+            let month = ("00" + (date.getMonth() + 1)).slice(-2);
+            let day = ("00" + (date.getDate())).slice(-2);
+            %>
+            <tr class = "input">
+              <th>購入日</th>
+              <td><input type = "date" name = "limit" value = "<%=year%>-<%=month%>-<%=day%>"></td>
+            </tr>
             <tr class = "input">
               <th>商品名</th>
-              <td><input></td>
+              <td><input type = "text" id = "product_input"></td>
             </tr>
             <tr class = "input">
               <th>金額</th>
               <td class = "amount">
-                <input><h4 class = "unit">
+                <input type = "number" id = "amount_input"><h4 class = "unit">
                   <%
                     let unit = "円" //データベースから引っ張る
                   %>
@@ -36,13 +47,6 @@
             </tr>
             <tr class = "input">
               <th>賞味・消費期限</th>
-                <!-- 日付変更  yyyy-mm-dd で取得-->
-                <% 
-                let date = new Date();
-                let year = date.getFullYear();
-                let month = ("00" + (date.getMonth() + 1)).slice(-2);
-                let day = ("00" + (date.getDate())).slice(-2);
-                %>
               <td><input type = "date" name = "limit" value = "<%=year%>-<%=month%>-<%=day%>"></td>
             </tr>
           </table>

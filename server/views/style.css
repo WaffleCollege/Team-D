@@ -115,9 +115,19 @@ form button{
 }
 
 .amount h4 {
-  margin-left:10px;
+  margin:0px 10px;
 }
 
+.input_table {
+  border-spacing:20px;
+  margin:auto;
+  border: 3px solid #4169e1;
+    border-radius: 10px;
+}
+
+.input {
+  font-size:20px;
+}
 /*------------------------------------------------*/
 /*list.ejs*/
 .day {
