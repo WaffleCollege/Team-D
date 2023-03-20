@@ -8,8 +8,8 @@
 
 const food_obj_list = [];
 //データベースからlistに追加??
-food_obj_list.push({name: "かぼちゃ", amount: 200, limit:"2023/2/3"});
-food_obj_list.push({name: "レトルトカレー", amount: 150, limit:"2023/10/3"});
+food_obj_list.push({name: "かぼちゃ", amount: 200, limit:"2023/03/25"});
+// food_obj_list.push({name: "レトルトカレー", amount: 150, limit:"2023/10/3"});
 
 const food_list = document.getElementById("list");
 for(let i of food_obj_list) {

@@ -14,7 +14,8 @@ function() {
             alert('商品名を入力してください!')
         } else if (amount_input.value == "") {
             alert('金額を入力してください!')
-        } //else { //入力OK データの更新
-            
-        // }
+        } else { //入力OK データの更新
+            //リストページに移行
+            location = "/list"
+        }
 })

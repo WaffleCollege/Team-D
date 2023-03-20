@@ -9,11 +9,11 @@
   </head>
 
 <%
-  target = 20000; //データベースから目標値を引っ張ってくる
+  let target = 20000; //データベースから目標値を引っ張ってくる
 %>
 
 <%
-    achievement = 18000; //データベースから引っ張ってくる
+  let achievement = 18000;
 %>
 
   <body>
@@ -29,7 +29,7 @@
         %>
         <div class = button_date>
           <button id = "last">←</button>
-            <h1 id = "date"><%= year %>年<%= month %>月</h1>
+            <h1 id = "date">2023<%#= year %>年3<%#= month %>月</h1>
           <button id = "next">→</button>
         </div>
         <div class = "target-achivement">
@@ -60,7 +60,7 @@
                     SRC = "imgs/pen3.png";
                 }
             %>
-            <img src = <%= SRC%>>
+            <img id = "test" src = <%= SRC%>>
             <!-- <img src = "https://cdn.glitch.global/d2c5f07e-df19-41b0-aa15-c4e16dd6d9ec/%E3%83%98%E3%82%9A%E3%83%B3%E3%82%AD%E3%82%99%E3%83%B31.png?v=1676985350670"> -->
         </div>
       </div>
